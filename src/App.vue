@@ -5,14 +5,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="troll face" class="logo" src="@/assets/troll-face.png" width="90" height="90" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Hello!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/meme">Meme Generator</RouterLink>
       </nav>
     </div>
   </header>
@@ -33,7 +33,7 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
   margin-top: 2rem;
 }
