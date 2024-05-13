@@ -1,6 +1,8 @@
 # vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is developed with Vue 3 in Vite and Pinia.  
+
+The project is used to practice Vue and storage management with Pinia.
 
 ## Recommended IDE Setup
 

@@ -3,13 +3,12 @@ import { storeToRefs } from 'pinia'
 import { useAllMemesStore } from '@/stores/allMemes'
 import { useMemeStore } from '@/stores/meme'
 
-const memeStore = useMemeStore()
-const { topText, bottomText, randomImage } = storeToRefs(memeStore)
-const { updateImage } = memeStore
-
 const allMemesStore = useAllMemesStore()
 allMemesStore.getMemes()
 
+const memeStore = useMemeStore()
+const { topText, bottomText, randomImage } = storeToRefs(memeStore)
+const { updateImage } = memeStore
 </script>
 
 <template>
