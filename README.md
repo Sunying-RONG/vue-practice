@@ -2,7 +2,7 @@
 
 This project is developed with Vue 3 in Vite and Pinia.  
 
-The project is used to practice Vue and storage management with Pinia.
+The project is used to practice Vue and state management with Pinia.
 
 ## Recommended IDE Setup
 
