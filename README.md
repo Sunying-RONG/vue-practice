@@ -4,6 +4,8 @@ This project is developed with Vue 3 in Vite and Pinia.
 
 The project is used to practice Vue and state management with Pinia.
 
+The button to get today's date in App.vue and the service folder are used for practice calling Nodejs API.
+
 ## Project Setup
 
 ```sh
