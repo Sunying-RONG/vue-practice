@@ -1,6 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import HomeService from './service/HomeService';
+import { ref } from 'vue'
+
+const today = ref("");
+const receivedDate = () => {
+  HomeService.getDate()
+    .then(res => {
+      today.value = res.data;
+      console.log(today.value);
+    })
+    .catch(e => {
+      console.log(e);
+    })
+};
 </script>
 
 <template>
@@ -8,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="troll face" class="logo" src="@/assets/troll-face.png" width="90" height="90" />
 
     <div class="wrapper">
+      <button @click="receivedDate">Today is: {{ today }}</button>
       <HelloWorld msg="Hello!" />
 
       <nav>
